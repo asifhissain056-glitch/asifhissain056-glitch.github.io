@@ -1,137 +1,220 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Asif Hossen - Aspiring Software Engineer and ICT Student at MBSTU.">
+    <meta name="author" content="Asif Hossen">
+
     <title>Asif Hossen | Software Engineer</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <a href="#home" class="logo">Asif<span>.</span></a>
+    <div class="grid-background"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">ASIF<span>.</span></a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <a href="#contact" class="nav-btn">
+                Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
         </nav>
     </header>
 
 
-    <!-- Home -->
-    <section id="home" class="hero">
+    <!-- HERO -->
+    <section class="hero container" id="home">
 
-        <div class="hero-content">
+        <div class="hero-left">
 
-            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+            <div class="status">
+                <span class="status-dot"></span>
+                Available for Learning & Opportunities
+            </div>
 
-            <h1>Hi, I'm <span>Asif Hossen</span></h1>
+            <p class="hello">HELLO, I'M</p>
 
-            <h2>ICT Student & Aspiring Software Engineer</h2>
+            <h1>
+                Asif <span>Hossen</span>
+            </h1>
 
-            <p class="description">
-                I am passionate about programming,
-                problem solving and building useful software.
-                Currently learning and exploring new technologies.
+            <h2>Aspiring Software Engineer</h2>
+
+            <p class="hero-description">
+                An ICT student passionate about programming,
+                problem solving and building meaningful digital
+                experiences through technology.
             </p>
 
             <div class="hero-buttons">
 
-                <a href="#projects" class="btn">View Projects</a>
+                <a href="#projects" class="btn primary-btn">
+                    Explore Projects
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
 
-                <a href="#contact" class="btn outline">
-                    Contact Me
+                <a href="cv.pdf" class="btn secondary-btn" download>
+                    Download CV
+                    <i class="fa-solid fa-download"></i>
+                </a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="https://github.com/asifhissain056-glitch"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.facebook.com/asifahmedofficial056"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="mailto:asifhissain056@gmail.com"
+                   aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <a href="https://wa.me/8801815673474"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
                 </a>
 
             </div>
 
         </div>
 
-        <div class="profile">
-            <img src="profile.jpg" alt="Asif Hossen">
+
+        <!-- PROFILE IMAGE -->
+        <div class="hero-right">
+
+            <div class="profile-area">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="profile-glow"></div>
+
+                <div class="profile-frame">
+                    <img src="profile.jpg"
+                         alt="Asif Hossen Professional Profile Photo"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                    <div class="profile-fallback">AH</div>
+                </div>
+
+                <div class="floating-card card-top">
+                    <i class="fa-solid fa-code"></i>
+                    <div>
+                        <strong>Developer</strong>
+                        <small>In Progress</small>
+                    </div>
+                </div>
+
+                <div class="floating-card card-bottom">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div>
+                        <strong>ICT Student</strong>
+                        <small>MBSTU</small>
+                    </div>
+                </div>
+
+                <div class="tech-badge badge-html">HTML</div>
+                <div class="tech-badge badge-cpp">C++</div>
+
+            </div>
+
         </div>
 
     </section>
 
 
-    <!-- About -->
-    <section id="about">
+    <!-- ABOUT -->
+    <section class="section container" id="about">
 
-        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="section-heading">
+            <p>GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+        </div>
 
         <div class="about-card">
 
-            <p>
-                Hello! I am Asif Hossen, an ICT student at
-                Mawlana Bhashani Science and Technology
-                University (MBSTU).
-
-                I enjoy programming, solving algorithmic
-                problems and learning new technologies.
-
-                My goal is to become a skilled Software Engineer
-                and build meaningful software solutions.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- Skills -->
-    <section id="skills">
-
-        <h2 class="section-title">My <span>Skills</span></h2>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <div class="skill-info">
-                    <span>C</span>
-                    <span>Learning</span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar c"></div>
-                </div>
+            <div class="about-icon">
+                <i class="fa-solid fa-user-astronaut"></i>
             </div>
 
-            <div class="skill-card">
-                <div class="skill-info">
-                    <span>C++</span>
-                    <span>Learning</span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar cpp"></div>
-                </div>
-            </div>
+            <div class="about-content">
 
-            <div class="skill-card">
-                <div class="skill-info">
-                    <span>HTML</span>
-                    <span>Learning</span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar html"></div>
-                </div>
-            </div>
+                <h3>Passionate About Technology</h3>
 
-            <div class="skill-card">
-                <div class="skill-info">
-                    <span>CSS</span>
-                    <span>Learning</span>
+                <p>
+                    I am Asif Hossen, an undergraduate student of
+                    Information and Communication Technology (ICT)
+                    at Mawlana Bhashani Science and Technology
+                    University (MBSTU), Bangladesh.
+                </p>
+
+                <p>
+                    I enjoy learning programming, exploring new
+                    technologies and solving problems. My goal is
+                    to become a skilled Software Engineer and
+                    develop useful software solutions.
+                </p>
+
+                <div class="about-details">
+
+                    <div>
+                        <span>Name</span>
+                        <strong>Asif Hossen</strong>
+                    </div>
+
+                    <div>
+                        <span>Department</span>
+                        <strong>ICT</strong>
+                    </div>
+
+                    <div>
+                        <span>University</span>
+                        <strong>MBSTU</strong>
+                    </div>
+
+                    <div>
+                        <span>Location</span>
+                        <strong>Tangail, Bangladesh</strong>
+                    </div>
+
                 </div>
-                <div class="progress">
-                    <div class="progress-bar css"></div>
-                </div>
+
             </div>
 
         </div>
@@ -139,49 +222,182 @@
     </section>
 
 
-    <!-- Projects -->
-    <section id="projects">
+    <!-- EDUCATION -->
+    <section class="section container" id="education">
 
-        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="section-heading">
+            <p>MY ACADEMIC BACKGROUND</p>
+            <h2>My <span>Education</span></h2>
+        </div>
 
-        <div class="projects-container">
+        <div class="education-grid">
+
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fa-solid fa-university"></i>
+                </div>
+
+                <span class="edu-year">Undergraduate</span>
+
+                <h3>B.Sc. in ICT</h3>
+
+                <p>
+                    Mawlana Bhashani Science and Technology University
+                </p>
+
+                <small>Tangail, Bangladesh</small>
+            </div>
+
+
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+
+                <span class="edu-year">2023</span>
+
+                <h3>Higher Secondary Certificate</h3>
+
+                <p>Science Group</p>
+
+                <small>HSC</small>
+            </div>
+
+
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <span class="edu-year">2021</span>
+
+                <h3>Secondary School Certificate</h3>
+
+                <p>Science Group</p>
+
+                <small>SSC</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="section container" id="skills">
+
+        <div class="section-heading">
+            <p>WHAT I KNOW</p>
+            <h2>Technical <span>Skills</span></h2>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <i class="fa-solid fa-c"></i>
+                <h3>C</h3>
+                <p>Programming</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>C++</h3>
+                <p>Programming</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Web Structure</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p>Web Design</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Currently Learning</p>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-solid fa-diagram-project"></i>
+                <h3>Data Structures</h3>
+                <p>Academic Knowledge</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section container" id="projects">
+
+        <div class="section-heading">
+            <p>MY RECENT WORK</p>
+            <h2>Featured <span>Projects</span></h2>
+        </div>
+
+        <div class="projects-grid">
 
             <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <span class="project-status">In Development</span>
 
                 <h3>Campus Lost & Found</h3>
 
                 <p>
-                    A university-based platform concept
-                    to help students report and find lost items.
+                    A campus-focused platform concept to report
+                    lost and found items, search reports and
+                    manage item claims.
                 </p>
 
-                <span>C | Project Concept</span>
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                </div>
 
             </div>
 
-            <div class="project-card">
-
-                <h3>Programming Practice</h3>
-
-                <p>
-                    Solving programming problems and
-                    improving algorithmic thinking.
-                </p>
-
-                <span>C++ | Codeforces</span>
-
-            </div>
 
             <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+
+                <span class="project-status">Published</span>
 
                 <h3>Personal Portfolio</h3>
 
                 <p>
-                    My personal website to showcase
-                    my skills, education and projects.
+                    A responsive personal website showcasing
+                    my profile, education, technical skills,
+                    projects and contact information.
                 </p>
 
-                <span>HTML | CSS</span>
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>GitHub Pages</span>
+                </div>
+
+                <a href="https://asifhissain056-glitch.github.io/"
+                   target="_blank" rel="noopener noreferrer"
+                   class="project-link">
+                    View Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
 
             </div>
 
@@ -190,42 +406,102 @@
     </section>
 
 
-    <!-- Contact -->
-    <section id="contact">
+    <!-- CONTACT -->
+    <section class="section container" id="contact">
 
-        <h2 class="section-title">Contact <span>Me</span></h2>
+        <div class="section-heading">
+            <p>GET IN TOUCH</p>
+            <h2>Contact <span>Me</span></h2>
+        </div>
 
-        <p class="contact-text">
-            Feel free to contact me for any queries or collaboration.
-        </p>
+        <div class="contact-box">
 
-        <div class="contact-buttons">
+            <h3>Let's Connect & Build Something Great</h3>
 
-            <a href="mailto:asifhissain056@gmail.com" class="btn">
-                Email Me
-            </a>
+            <p>
+                Feel free to contact me for discussions,
+                collaborations and learning opportunities.
+            </p>
 
-            <a href="https://wa.me/8801815673474"
-               target="_blank" class="btn whatsapp">
-                WhatsApp
-            </a>
+            <div class="contact-grid">
 
-            <a href="https://github.com/asifhissain056-glitch"
-               target="_blank" class="btn github">
-                GitHub
-            </a>
+                <a href="mailto:asifhissain056@gmail.com"
+                   class="contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+                        <span>Email</span>
+                        <strong>asifhissain056@gmail.com</strong>
+                    </div>
+
+                </a>
+
+
+                <a href="https://wa.me/8801815673474"
+                   target="_blank" rel="noopener noreferrer"
+                   class="contact-item">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <div>
+                        <span>WhatsApp</span>
+                        <strong>01815673474</strong>
+                    </div>
+
+                </a>
+
+
+                <a href="https://github.com/asifhissain056-glitch"
+                   target="_blank" rel="noopener noreferrer"
+                   class="contact-item">
+
+                    <i class="fa-brands fa-github"></i>
+
+                    <div>
+                        <span>GitHub</span>
+                        <strong>asifhissain056-glitch</strong>
+                    </div>
+
+                </a>
+
+
+                <a href="https://www.facebook.com/asifahmedofficial056"
+                   target="_blank" rel="noopener noreferrer"
+                   class="contact-item">
+
+                    <i class="fa-brands fa-facebook"></i>
+
+                    <div>
+                        <span>Facebook</span>
+                        <strong>Asif Hossen</strong>
+                    </div>
+
+                </a>
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
 
-        <p>© 2026 Asif Hossen. All Rights Reserved.</p>
+        <div class="container footer-content">
 
-        <p>Designed & Developed by Asif Hossen</p>
+            <a href="#home" class="logo">ASIF<span>.</span></a>
+
+            <p>
+                Designed & Built by <strong>Asif Hossen</strong>
+            </p>
+
+            <p class="copyright">
+                © 2026 Asif Hossen. All Rights Reserved.
+            </p>
+
+        </div>
 
     </footer>
 
